@@ -1,0 +1,57 @@
+GOVERNMENT DATABASE - TRACE TABLE
+=================================
+
+A. BST INSERTION TRACE
+
+Step    ID       Comparisons    Position/Path
+----------------------------------------------------------
+1       A102     0              Root
+2       A25      1              Right of A102
+3       A7       2              Right of A25
+4       B100     3              Right of A7
+5       B12      4              Left of B100
+6       A120     2              Left of A25
+7       B3       5              Right of B12
+8       A45      3              Left of A7
+
+
+B. BST SEARCH TRACE
+
+Search Key    Search Path                              Comparisons
+-------------------------------------------------------------------
+A102          A102                                     1
+A45           A102 -> A25 -> A7 -> A45               4
+B3            A102 -> A25 -> A7 -> B100 -> B12 -> B3 6
+A120          A102 -> A25 -> A120                     3
+B12           A102 -> A25 -> A7 -> B100 -> B12       5
+A7            A102 -> A25 -> A7                        3
+
+
+C. LINEAR SEARCH TRACE
+
+Search Key    Position Found    Comparisons
+--------------------------------------------
+A102          1                 1
+A45           8                 8
+B3            7                 7
+A120          6                 6
+B12           5                 5
+A7            3                 3
+
+
+D. BST STRUCTURE
+
+             A102
+                \
+                A25
+               /   \
+            A120    A7
+                   /  \
+                 A45  B100
+                      /
+                    B12
+                      \
+                       B3
+
+Height = 5 edges
+Levels = 6

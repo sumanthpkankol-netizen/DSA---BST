@@ -1,0 +1,7 @@
+Conclusion
+
+
+The Binary Search Tree was successfully implemented to organize the given government identification numbers.
+The inorder traversal displayed the identification numbers in lexicographical order. The search performance of the BST was compared with Linear Search using selected identification numbers, and the BST required fewer comparisons for the selected searches.
+The experiment also showed that the height and performance of a BST depend on the insertion order. A balanced BST can provide an average search time of O(log n), while a highly skewed BST can degrade to O(n). The length of the identification keys can also affect the time required for string comparisons.
+Therefore, for a growing database, a self-balancing BST such as an AVL Tree or Red-Black Tree can be used to maintain efficient search and insertion operations. For very large database systems, B-Trees or B+ Trees can also be considered for efficient indexing.

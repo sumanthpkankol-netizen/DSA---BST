@@ -1,0 +1,43 @@
+BST SEARCH VS LINEAR SEARCH
+===========================
+
+Search ID       BST Comparisons       Linear Comparisons
+---------------------------------------------------------
+A102            1                     1
+A45             4                     8
+B3              6                     7
+A120            3                     6
+B12             5                     5
+A7              3                     3
+---------------------------------------------------------
+Total           22                    30
+Average         3.67                  5.00
+
+
+OBSERVATION
+===========
+
+Total BST comparisons = 22
+Total Linear Search comparisons = 30
+
+Average BST comparisons = 22/6 = 3.67
+Average Linear Search comparisons = 30/6 = 5.00
+
+For the selected search keys, BST required fewer comparisons
+than Linear Search.
+
+
+INSERTION ORDER ANALYSIS
+========================
+
+Given insertion order:
+A102, A25, A7, B100, B12, A120, B3, A45
+
+Height of resulting BST = 5 edges.
+
+For n = 8:
+Best possible height is approximately log2(8) = 3 edges.
+Worst possible height = n - 1 = 7 edges.
+
+Therefore, the given insertion order produced a tree between
+the ideal balanced case and the completely skewed case.

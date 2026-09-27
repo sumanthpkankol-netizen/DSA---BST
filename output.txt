@@ -1,0 +1,39 @@
+GOVERNMENT DATABASE - BST ASSIGNMENT
+------------------------------------
+
+Insertion Trace:
+ID              Comparisons
+A102            0
+A25             1
+A7              2
+B100            3
+B12             4
+A120            2
+B3              5
+A45             3
+
+Inorder Traversal:
+A102 A120 A25 A45 A7 B100 B12 B3
+
+BST Height = 5 edges
+Number of Levels = 6
+
+
+SEARCH COMPARISON
+------------------------------------
+ID              BST     Linear
+A102            1       1
+A45             4       8
+B3              6       7
+A120            3       6
+B12             5       5
+A7              3       3
+
+COMPLEXITY ANALYSIS
+------------------------------------
+BST Search - Best Case: O(1)
+BST Search - Average Case: O(log n)
+BST Search - Worst Case: O(n)
+Linear Search - Best Case: O(1)
+Linear Search - Average Case: O(n)
+Linear Search - Worst Case: O(n)
